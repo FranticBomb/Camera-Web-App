@@ -12,7 +12,8 @@
 		video: true,
 		audio: false
 	}, function(stream) {
-		console.log(stream);
+		video.src = vendorUrl.createObjectURL(stream);
+		video.play();
 	}, 
 	   function(error) {
 	  // An error occured
