@@ -8,12 +8,12 @@
 							 navigator.msGetUserMedia;
 
 	// Capture video
-	navigator.getMedia({
+	navigator.mediaDevices.getUserMedia({
 		video: true,
 		audio: false
-	}, function(stream) {
-		video.src = vendorUrl.createObjectURL(stream);
-		video.play();
+	}).then(function(stream) {
+  video.srcObject = stream;
+  return video.play();
 	}, 
 	   function(error) {
 	  // An error occured
