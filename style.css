@@ -8,3 +8,14 @@ body {
 	margin: 5px;
 	background-color: #dcdde1;
 }
+.intro {
+	color: black;
+	font-size: 15px;
+	margin: 5px;
+	border: 2.5px solid #95a5a6;
+}
+.credits {
+	color: black;
+	font-size: 15px;
+	margin: 2px;	
+}
